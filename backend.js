@@ -14,8 +14,8 @@ app.use(cors());
 
 app.get('/',(req,res)=>{
 
-res.send('I am working muhahaha');
-res.send("hello hello");
+// res.send('I am working muhahaha');
+res.send("hello new file");
 });
 
 
