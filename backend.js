@@ -3,6 +3,7 @@ const app= express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const https = require("https");
+const Skills = require('./models/skills');
 const { json } = require('body-parser');
 
 
@@ -12,11 +13,27 @@ app.use(cors());
 
 
 
-app.get('/',(req,res)=>{
 
-// res.send('I am working muhahaha');
-res.send("hello new file");
-});
+    const url = "mongodb://localhost:27017/SkillDB";
+
+    app.get("/", async (req,res)=>{
+        try{
+            await mongoose.connect(url);
+            console.log("Database connected");
+            Skills.find((err, skills)=>{
+                if(err){ 
+                    console.log(err);
+                }else {
+                    console.log(skills);
+                    res.send(skills);
+                    mongoose.connection.close();
+                }
+            })
+        }
+        catch(error){
+            console.log(error);
+        }
+    })
 
 
 

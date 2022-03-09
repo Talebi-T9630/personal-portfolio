@@ -1,0 +1,72 @@
+[
+{
+    "_id":1,
+    "skillName":"React JS",
+    "proficiencyLevel":4,
+    "typeOfSkill":"Technical Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"},
+{
+    "_id":2,
+    "skillName":"Node JS",
+    "proficiencyLevel":2,
+    "typeOfSkill":"Technical Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+
+},
+{
+    "_id":3,
+    "skillName":"MongoDB",
+    "proficiencyLevel":4,
+    "typeOfSkill":"Technical Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+
+},
+{
+    "_id":4,
+    "skillName":"Time management",
+    "proficiencyLevel":5,
+    "typeOfSkill":"Soft Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+
+
+
+},
+{
+    "_id":5,
+    "skillName":"Communication",
+    "proficiencyLevel":5,
+    "typeOfSkill":"Soft Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+
+
+},
+{
+    "_id":6,
+    "skillName":"Problem-solving",
+    "proficiencyLevel":5,
+    "typeOfSkill":"Soft Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+
+
+},
+{
+    "_id":7,
+    "skillName":"Teamwork",
+    "proficiencyLevel":5,
+    "typeOfSkill":"Soft Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+
+
+},
+{
+    "_id":8,
+    "skillName":"Java",
+    "proficiencyLevel":4,
+    "typeOfSkill":"Technical Skill",
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+
+
+}
+
+
+]
