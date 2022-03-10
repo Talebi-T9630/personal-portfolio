@@ -1,57 +1,50 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* style for each colum */
 td:nth-child(1) {
-   background: hsl(150, 50%, 50%); 
-  }
+  background: hsl(150, 50%, 50%);
+}
 
-  #icon{
-    width: 50px;
-    height: 50px;
-  }
-  
-  #skillName{
-    width: 200px;
-    background-color: thistle;
-    border-style:solid;
-    border-color:#287EC7;
-    border-radius: 40%;
-    text-align: center;
-    }
+#icon {
+  width: 3.125rem;
+  height: 3.25rem;
+}
+
+#skillName {
+  width: 12.5rem;
+  background-color: thistle;
+  /* border-style: solid;
+  border-color: #287EC7; */
+  border-radius: 50%;
+  text-align: center;
+  height: 2rem;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#skillName:hover{
+  background-color: blueviolet;
+  width: 14.06rem;
+}
+
+body {
+  background-image: url("./images/5591276.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+
+#skillsDiv{
+  margin: auto;
+  width: 50rem;
+}
+
+#skillButton{
+width: fit-content;
+/* background-color: #eb851e; */
+background-color: white;
+color:#eb851e;
+border: none;
+border-radius: 10%;
+height: fit-content;
+}

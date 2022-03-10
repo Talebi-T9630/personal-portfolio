@@ -3,13 +3,11 @@
     "_id":1,
     "skillName":"React JS",
     "proficiencyLevel":4,
-    "typeOfSkill":"Technical Skill",
     "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"},
 {
     "_id":2,
     "skillName":"Node JS",
     "proficiencyLevel":2,
-    "typeOfSkill":"Technical Skill",
     "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
 
 },
@@ -17,44 +15,39 @@
     "_id":3,
     "skillName":"MongoDB",
     "proficiencyLevel":4,
-    "typeOfSkill":"Technical Skill",
     "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
 
 },
 {
     "_id":4,
-    "skillName":"Time management",
-    "proficiencyLevel":5,
-    "typeOfSkill":"Soft Skill",
-    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    "skillName":"Android Studio",
+    "proficiencyLevel":3,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg"
 
 
 
 },
 {
     "_id":5,
-    "skillName":"Communication",
-    "proficiencyLevel":5,
-    "typeOfSkill":"Soft Skill",
-    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    "skillName":"C#",
+    "proficiencyLevel":3,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
 
 
 },
 {
     "_id":6,
-    "skillName":"Problem-solving",
-    "proficiencyLevel":5,
-    "typeOfSkill":"Soft Skill",
-    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    "skillName":"PHP",
+    "proficiencyLevel":2,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
 
 
 },
 {
     "_id":7,
-    "skillName":"Teamwork",
+    "skillName":"Github",
     "proficiencyLevel":5,
-    "typeOfSkill":"Soft Skill",
-    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
 
 
 },
@@ -62,10 +55,52 @@
     "_id":8,
     "skillName":"Java",
     "proficiencyLevel":4,
-    "typeOfSkill":"Technical Skill",
     "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
 
 
+},
+{
+    "_id":9,
+    "skillName":"Docker",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg"
+    
+},
+{
+    "_id":10,
+    "skillName":"Figma",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+},
+{
+    "_id":11,
+    "skillName":"Bootstrap",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+},
+{
+    "_id":12,
+    "skillName":"HTML5",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+},
+{
+    "_id":13,
+    "skillName":"CSS",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+},
+{
+    "_id":14,
+    "skillName":"JavaScript",
+    "proficiencyLevel":4,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+},
+{
+    "_id":15,
+    "skillName":"JQuery",
+    "proficiencyLevel":3,
+    "image":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg"
 }
 
 

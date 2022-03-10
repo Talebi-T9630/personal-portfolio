@@ -12,14 +12,6 @@ const skillsSchema = new mongoose.Schema({
         max: 5,
         required: [true, "please enter proficiency level"]
     },
-    typeOfSkill: {
-        type: String,
-        required: [true, "please enter whether it is a hard or soft skill."]
-    },
-    typeOfSkill: {
-        type: String,
-        required: [true, "please enter whether it is a hard or soft skill."]
-    },
     image: {
         type: String,
         required: [true, "please enter image link."]

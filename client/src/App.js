@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+// import back from './images/background.jps';
 
 
 function App() {
@@ -22,27 +23,30 @@ function App() {
 
   }, []);
 
-  return (
-    <div>
+  const informationDropDown=()=>{
+    console.log("yo you pressed the button");
 
-      {/* <table class="table">
-        {skills.map(skill => <tr key={skill.id} className="row">
-          <td className='col'><img src={skill.image} /></td>
-          <td className='col'>{skill.skillName}</td>
-          <td className='col'>{skill.proficiencyLevel}</td>
-          <td className='col'>{skill.typeOfSkill}</td>
-        </tr>)}
-      </table> */}
-        {skills.map(skill => <div key={skill.id} className="row">
+  };
+
+  return (
+    <body>
+    <div id="styledimg">
+
+    
+      <br></br>
+      <br></br>
+      <br></br>
+
+
+        {skills.map(skill => <div key={skill.id} className="row" id='skillsDiv'>
           <img src={skill.image} className='col' id='icon' />
-         <div id="skillName"><p className='col' >{skill.skillName}</p></div>
+         <div id="skillName"><p className='col'  >{skill.skillName} </p></div>
+         <button id='skillButton' type='button' onClick={()=>informationDropDown()} className='col'>></button>
           <p className='col' id='skillLevel'>{skill.proficiencyLevel}</p>
-          <p className='col'id='skillType'>{skill.typeOfSkill}</p>
         </div>)}
 
-
-
     </div>
+    </body>
   );
 }
 
