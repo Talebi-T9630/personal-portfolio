@@ -15,6 +15,14 @@ const skillsSchema = new mongoose.Schema({
     image: {
         type: String,
         required: [true, "please enter image link."]
+    },
+    category:{
+        type:String,
+        required:[true, 'please enter a category.']
+    },
+    description:{
+        type:String,
+        required:[false]
     }
 
 });

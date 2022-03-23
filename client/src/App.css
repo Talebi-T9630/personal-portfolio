@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ubuntu:wght@300&display=swap');
 /* style for each colum */
 td:nth-child(1) {
   background: hsl(150, 50%, 50%);
@@ -9,20 +9,29 @@ td:nth-child(1) {
   width: 3.125rem;
   height: 3.25rem;
 }
+#icon:hover{
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 #skillName {
   width: 12.5rem;
-  background-color: thistle;
+  background-color: #fff0f5;
   /* border-style: solid;
   border-color: #287EC7; */
   border-radius: 50%;
   text-align: center;
   height: 2rem;
-  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 5px 5px 2px 1px rgba(78, 78, 214, 0.2);
 }
 
 #skillName:hover{
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   width: 14.06rem;
 }
 
@@ -31,20 +40,167 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
- 
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #skillsDiv{
   margin: auto;
   width: 50rem;
+  padding: 0.5rem;
 }
 
 #skillButton{
-width: fit-content;
-/* background-color: #eb851e; */
-background-color: white;
-color:#eb851e;
+width: 2rem;
+background-color: #eb851e;
+color:white;
 border: none;
-border-radius: 10%;
-height: fit-content;
+border-radius: 50%;
+height: 2rem;
+text-align: center;
+vertical-align: middle;
+
+}
+
+#skillButton:hover{
+  transform: translateX(0.5rem);
+  transition: 0.2s;
+  transform: rotate(90deg);
+  
+
+}
+  /* TODO: Make button look like something when cicked */
+#skillButton:focus{
+  transform: translateX(0.5rem);
+  transition: 0.2s;
+  transform: rotate(90deg);
+}
+
+#skillLevel{
+  height: 3rem;
+}
+#profile{
+  height: 30rem;
+  width: 22rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+#contactForm
+{
+  /* align-items: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+  padding: 2rem;
+  /* font-variant: all-petite-caps; */
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+#contactForm{
+  align-items:center ;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input{
+  width: 50%;
+}
+
+#contactbutton{
+  background-color: #18a795;
+}
+
+footer{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.biRightArrow:hover{
+  transform: translateX(0.8rem);
+  transition: 0.2s;
+}
+
+#navBar{
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+#resume{
+  border: none;
+  background-color:#18a795;
+  color: white;
+  font-size:1.5rem;
+  border-radius:15px;
+  padding: 1rem;
+
+}
+
+#aboutmeinfo{
+  text-align: right;
+  font-size: xx-large;
+  width: 30rem;
+  text-align: left;
+  padding: 2rem;
+  margin-left: 5%;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+#aboutme-container{
+  display: flex;
+}
+
+#sociallink{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    left: 7rem;
+}
+
+#sociallink svg:hover{
+  fill: blue;
+}
+h3,h4{
+  display: block;
+  position:relative;
+  left: 30rem;  
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#home{
+  background-image: url('./images/Cover.png');
+  width: max-content;
 }
