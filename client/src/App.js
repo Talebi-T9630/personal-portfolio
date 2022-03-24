@@ -16,6 +16,9 @@ import Contact from './components/contactform';
 import NavBar from './components/navbar';
 import AboutMe from './components/about';
 import Home from './components/home';
+// import Cover from './images/Cover.png';
+// import { AiFillLinkedin } from 'react-icons/ai';
+// import { AiOutlineGithub } from 'react-icons/ai';
 
 
 
@@ -58,19 +61,20 @@ const skillInfoDropDown =(section)=>{
       x.style.display = "none";
     }
 }
+//TODO: Input the parameters into a list so they are all listed 
+//TODO: add the descriptions to each skill
+//TODO: Make website responsive
+//TODO: Hide mongo password ( or change it)
+//TODO: Deploy to the domain 
+const splitInformation=(description)=>{
 
+  let paragraph=description.split(".");
 
-  //TODO: add the skill thingy properly
-  // const skillLevel = (level) => {
-  //   console.log(level);
-  //   let amount;
-  //   for (let i = 0; i < level; i++) {
-  //   amount+= React.createElement('AiFillStar', {color:'pink'}, '');
-  //   }
-  //   console.log(amount);
-  //   return amount;
-
-  // }
+  for(let i=0;i<paragraph.length;i++){
+      <li>{paragraph[i]}</li>
+  }
+  console.log(paragraph);
+}
 
 
 
@@ -79,6 +83,10 @@ const skillInfoDropDown =(section)=>{
     <body>
       <NavBar />
       <Home/>
+      <br></br>
+      <br></br>
+      <br></br>
+
 
       <AboutMe/>
       <div id="styledimg">
@@ -86,12 +94,8 @@ const skillInfoDropDown =(section)=>{
         <br></br>
         <br></br>
         <br></br>
-        {/* <h1>
-          Sexy Web Developer Coming To Turn Your World Around.
-        </h1>
-        <img src={profile} id='profile'/> */}
-
-        <h1 id='skillType'>Frontend<BiRightArrow onClick={()=>skillInfoDropDown('frontend')} className='biRightArrow' color='#18a795'/></h1>
+        <h1>Skills</h1>
+        <h2 id='skillType'>Frontend<BiRightArrow onClick={()=>skillInfoDropDown('frontend')} className='biRightArrow' color='#18a795'/></h2>
         <div id='frontend' style={{ display: 'none' }}>
         {skills.filter(skill => skill.category == 'Frontend').map((skill, index) =>  <div key={skill.id} className="row" id='skillsDiv'>
           <img src={skill.image} className='col' id='icon' />
@@ -99,14 +103,14 @@ const skillInfoDropDown =(section)=>{
           <div className='col'><button id='skillButton' type='button' onClick={() => informationDropDown(skill.skillName, index)} > &gt; </button></div>
           <img src={image[skill.proficiencyLevel]} className='col' id='skillLevel' />
           <div id={skill.skillName} className='myDIV' style={{ display: 'none' }}>
-            <p>{skill.description}</p>
+            <p onClick={()=>splitInformation(skill.description)}>{skill.description}</p>
           </div>
 
         </div>)}
         </div>
 
 
-        <h1 id='skillType'>Backend<BiRightArrow onClick={()=>skillInfoDropDown('backend')} className='biRightArrow' color='#18a795'/></h1>
+        <h2 id='skillType'>Backend<BiRightArrow onClick={()=>skillInfoDropDown('backend')} className='biRightArrow' color='#18a795'/></h2>
         <div id='backend' style={{ display: 'none' }}>
         {skills.filter(skill => skill.category == 'Backend').map((skill, index) => <div key={skill.id} className="row" id='skillsDiv'>
           <img src={skill.image} className='col' id='icon' />
@@ -118,7 +122,7 @@ const skillInfoDropDown =(section)=>{
         </div>)}
         </div>
 
-        <h1 id='skillType'>Design<BiRightArrow onClick={()=>skillInfoDropDown('design')} className='biRightArrow' color='#18a795'/></h1>
+        <h2 id='skillType'>Design<BiRightArrow onClick={()=>skillInfoDropDown('design')} className='biRightArrow' color='#18a795'/></h2>
         <div id='design' style={{ display: 'none' }}>
         {skills.filter(skill => skill.category == 'Design').map((skill, index) => <div key={skill.id} className="row" id='skillsDiv'>
           <img src={skill.image} className='col' id='icon' />
@@ -130,7 +134,7 @@ const skillInfoDropDown =(section)=>{
         </div>)}
         </div>
 
-        <h1 id='skillType'>Version Control<BiRightArrow onClick={()=>skillInfoDropDown('vcontrol')} className='biRightArrow' color='#18a795'/></h1>
+        <h2 id='skillType'>Version Control<BiRightArrow onClick={()=>skillInfoDropDown('vcontrol')} className='biRightArrow' color='#18a795'/></h2>
         <div id='vcontrol' style={{ display: 'none' }}>
         {skills.filter(skill => skill.category == 'VersionControl').map((skill, index) => <div key={skill.id} className="row" id='skillsDiv'>
           <img src={skill.image} className='col' id='icon' />

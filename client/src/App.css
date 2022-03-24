@@ -1,22 +1,205 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ubuntu:wght@300&display=swap');
-/* style for each colum */
-td:nth-child(1) {
-  background: hsl(150, 50%, 50%);
+
+/*------Main-Body-------*/
+
+body {
+  background-image: url("./images/5591276.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: contain;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 
+h1,h2 {
+  text-align: center;
+  padding: 2rem;
+  /* font-variant: all-petite-caps; */
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/*------Navbar-------*/
+
+#navBar {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+/*------Home-------*/
+
+
+#sociallink {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  font-size: 2rem;
+  /* width: 3rem; */
+  position: absolute;
+  bottom: 8rem;
+  left: 7rem;
+}
+
+#sociallink svg:hover {
+  fill: #eb851e;
+}
+
+#home h1 {
+  overflow: hidden;
+  border-right: .02em solid rgb(8, 8, 8);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation:
+    typing 2.5s forwards steps(100,end),
+    blink-caret .75s step-end infinite ;
+
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 25%
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
+#home h4{
+  text-align: center;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  animation-delay:15s;
+  opacity: 0;
+  animation: fadeIn linear 5s;
+  -webkit-animation: fadeIn linear 5s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeIn linear 5s;
+  -o-animation: fadeIn linear 5s;
+  -ms-animation: fadeIn linear 5s;
+
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#home {
+  background-image: url('./images/Cover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  padding-top: 2rem;
+  padding-bottom: 40rem;
+}
+
+
+
+/*------About-Me-------*/
+
+#aboutmeinfo {
+  text-align: right;
+  font-size:1.7rem;
+  width: 30rem;
+  text-align: left;
+  padding: 2rem;
+  margin-left: 5%;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+#aboutme-container {
+  display: flex;
+}
+#aboutmepicture img{
+  margin-left: 35rem;
+  width: 300px;
+  height: 337px;
+  object-fit: cover;
+}
+#resume {
+  border: none;
+  background-color: #18a795;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 5px 5px 2px 1px rgba(78, 78, 214, 0.2);
+}
+
+#resume:hover{
+background-color: #1dcfb8;
+padding: 1.2rem;
+
+}
+
+
+
+/*------Skills-------*/
 #icon {
   width: 3.125rem;
   height: 3.25rem;
 }
-#icon:hover{
-  -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+
+#icon:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 
 #skillName {
@@ -30,73 +213,50 @@ td:nth-child(1) {
   box-shadow: 5px 5px 2px 1px rgba(78, 78, 214, 0.2);
 }
 
-#skillName:hover{
+#skillName:hover {
   /* background-color: blueviolet; */
   width: 14.06rem;
 }
 
-body {
-  background-image: url("./images/5591276.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: 'Ubuntu', sans-serif;
-}
 
-#skillsDiv{
+
+#skillsDiv {
   margin: auto;
   width: 50rem;
   padding: 0.5rem;
 }
 
-#skillButton{
-width: 2rem;
-background-color: #eb851e;
-color:white;
-border: none;
-border-radius: 50%;
-height: 2rem;
-text-align: center;
-vertical-align: middle;
+#skillButton {
+  width: 2rem;
+  background-color: #eb851e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
 
 }
 
-#skillButton:hover{
+#skillButton:hover {
   transform: translateX(0.5rem);
   transition: 0.2s;
   transform: rotate(90deg);
-  
+
 
 }
-  /* TODO: Make button look like something when cicked */
-#skillButton:focus{
+
+/* TODO: Make button look like something when cicked */
+/* #skillButton:focus {
   transform: translateX(0.5rem);
   transition: 0.2s;
   transform: rotate(90deg);
-}
+} */
 
-#skillLevel{
+#skillLevel {
   height: 3rem;
 }
-#profile{
-  height: 30rem;
-  width: 22rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
 
-}
-
-#contactForm
-{
-  /* align-items: center; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Ubuntu', sans-serif;
-
-}
 .myDIV {
   width: 100%;
   padding: 50px 0;
@@ -106,16 +266,22 @@ vertical-align: middle;
   margin-bottom: 20px;
 }
 
-h1{
-  text-align: center;
-  padding: 2rem;
-  /* font-variant: all-petite-caps; */
-  font-family: 'Ubuntu', sans-serif;
-
+.biRightArrow:hover {
+  transform: translateX(0.8rem);
+  transition: 0.2s;
 }
 
-#contactForm{
-  align-items:center ;
+
+/*------Contact-form-------*/
+
+#contactForm {
+  /* align-items: center; */
+  display: block;
+  margin-left: auto;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 
 textarea {
@@ -129,15 +295,18 @@ textarea {
   font-size: 16px;
   resize: none;
 }
-input{
+
+input {
   width: 50%;
 }
 
-#contactbutton{
+#contactbutton {
   background-color: #18a795;
 }
 
-footer{
+/*------Footer-------*/
+
+footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -145,62 +314,65 @@ footer{
   text-align: center;
 }
 
-.biRightArrow:hover{
-  transform: translateX(0.8rem);
-  transition: 0.2s;
+/*==================== MEDIA QUERIES =======*/
+@media screen and (max-width: 350px){
+  
 }
 
-#navBar{
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-
-}
-#resume{
-  border: none;
-  background-color:#18a795;
-  color: white;
-  font-size:1.5rem;
-  border-radius:15px;
-  padding: 1rem;
-
-}
-
-#aboutmeinfo{
-  text-align: right;
-  font-size: xx-large;
-  width: 30rem;
-  text-align: left;
-  padding: 2rem;
-  margin-left: 5%;
-  font-family: 'Ubuntu', sans-serif;
-
-}
-#aboutme-container{
-  display: flex;
+/* Screen size 1285 */
+@media  screen and (max-width:1285px) {
+  /* HOME */
+  #home{
+    background-size: 1285px;
+    padding-bottom: 20rem;
+    padding-top:0.06rem;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  
+    to {
+      width: 30%
+    }
+  }
+  #sociallink {
+    bottom: 15rem;
+  }  
+  #aboutmepicture img{
+    margin-left: 15rem;
+  }
+  
 }
 
-#sociallink{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    font-size: 2rem;
-    position: relative;
-    left: 7rem;
-}
+/* Screen size 375 */
 
-#sociallink svg:hover{
-  fill: blue;
-}
-h3,h4{
-  display: block;
-  position:relative;
-  left: 30rem;  
-  text-align: left;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#home{
-  background-image: url('./images/Cover.png');
-  width: max-content;
+@media screen and (min-width:375) {
+  body{
+    width: 337px;
+  }
+  #home {
+    background-size: 800px;
+    padding-top: 50rem;
+    padding-bottom: 10rem;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  
+    to {
+      width: 90%
+    }
+  }
+  #aboutmepicture img{
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    }
+  #aboutmeinfo{
+    margin-right: 3rem;
+  }
+  
+  
 }
