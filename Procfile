@@ -1,0 +1,1 @@
+worker: nodemon backend.js

@@ -17,7 +17,6 @@ app.use(cors());
     // const url = "mongodb://localhost:27017/SkillDB";
     const url="mongodb+srv://tarane:88080707Tt!@cluster0.pmkhf.mongodb.net/skillDB";
 
-    
 
     app.get("/", async (req,res)=>{
         try{
@@ -41,4 +40,5 @@ app.use(cors());
 
 
 
-app.listen(5000,()=>{console.log("Listening on port 5000")});
+// app.listen(5000,()=>{console.log("Listening on port 5000")});
+app.listen(process.env.PORT || 5000,()=>{console.log("Listening on port 5000")});
