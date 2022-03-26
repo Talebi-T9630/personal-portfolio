@@ -3,20 +3,26 @@
 /*------Main-Body-------*/
 
 body {
-  background-image: url("./images/5591276.jpg");
+  /* background-image: url("./images/5591276.jpg");
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover; */
   font-family: 'Ubuntu', sans-serif;
-  
 }
 
 h1,h2 {
   text-align: center;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   /* font-variant: all-petite-caps; */
   font-family: 'Ubuntu', sans-serif;
 
+}
+
+.section-title{
+  background-color: whitesmoke;
+  box-shadow: grey;
+  /* TODO: improve shadow */
 }
 
 /*------Navbar-------*/
@@ -25,7 +31,7 @@ h1,h2 {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
-
+  display:flex;
 }
 
 
@@ -35,29 +41,32 @@ h1,h2 {
 #sociallink {
   margin-right: auto;
   margin-left: auto;
-  display: block;
-  font-size: 2rem;
-  /* width: 3rem; */
+  display: none;
+  font-size: 2.5rem;
   position: absolute;
-  bottom: 8rem;
+  top: 8rem;
   left: 7rem;
+  z-index: 100;
 }
 
 #sociallink svg:hover {
   fill: #eb851e;
 }
 
-#home h1 {
+#title-container h1 {
   overflow: hidden;
   border-right: .02em solid rgb(8, 8, 8);
+  padding: 0;
   white-space: nowrap;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  font-weight: bold;
   letter-spacing: .05em;
+  text-shadow: white;
   animation:
     typing 2.5s forwards steps(100,end),
     blink-caret .75s step-end infinite ;
-
-
 }
 
 @keyframes typing {
@@ -66,7 +75,7 @@ h1,h2 {
   }
 
   to {
-    width: 25%
+    width: 18rem;
   }
 }
 
@@ -79,10 +88,11 @@ h1,h2 {
   }
 }
 
-#home h4{
+#title-container h4{
   text-align: center;
   color: black;
   font-family: 'Ubuntu', sans-serif;
+  text-shadow: white;
   animation-delay:15s;
   opacity: 0;
   animation: fadeIn linear 5s;
@@ -90,8 +100,11 @@ h1,h2 {
   -webkit-animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation: fadeIn linear 5s;
+  -moz-animation-fill-mode:forwards;
   -o-animation: fadeIn linear 5s;
+  -o-animation-fill-mode:forwards;
   -ms-animation: fadeIn linear 5s;
+  -ms-animation-fill-mode:forwards;
 
 }
 @keyframes fadeIn {
@@ -119,42 +132,96 @@ h1,h2 {
   100% {opacity:1;}
 }
 
+
 #home {
-  background-image: url('./images/Cover.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
+  background-position: center center;
+  backface-visibility: hidden;
   padding-top: 2rem;
-  padding-bottom: 40rem;
+  height: 100vh;
+  animation: bgAppear 6s ease 1 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url('./images/bg/mountain.jpg');
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url('./images/Cover-cropped.png');
+  }
+  
+  25% {
+    background-image: url('./images/bg/aceCombat.jpg');
+  }
+
+  50% {
+    background-image: url('./images/bg/astaYuno.jpg');
+  }
+
+  75% {
+    background-image: url('./images/bg/tata2.jpg');
+  }
+
+  /* 100% {
+    background-image: url('./images/bg/tata.jpeg');
+  } */
+}
+
+@keyframes bgAppear {
+  0% {
+    background-image: url('./images/bg/plaincolor.png');
+  }
+  100% {
+    background-image: url('./images/bg/mountain.jpg');
+  }
+}
+
+#title-container{
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  position: absolute;
+  bottom: 5rem;
 }
 
 
 
 /*------About-Me-------*/
-
-#aboutmeinfo {
-  text-align: right;
-  font-size:1.7rem;
-  width: 30rem;
-  text-align: left;
-  padding: 2rem;
-  margin-left: 5%;
-  font-family: 'Ubuntu', sans-serif;
-
+#aboutme-section{
+  display: flexbox;
+  background-image: url('./images/bg/dino.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
 }
 
-#aboutme-container {
-  display: flex;
+.aboutmeinfo {
+  text-align: center;
+  font-size:1.2rem;
+  /* width: 30rem;
+  text-align: left; */
+  padding: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  justify-content: space-evenly;
+}
+
+
+#aboutmepicture
+{
+  margin: auto;
+  width: 300px;
 }
 #aboutmepicture img{
-  margin-left: 35rem;
   width: 300px;
-  height: 337px;
-  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  border-radius: .5rem;
 }
 #resume {
   border: none;
-  background-color: #18a795;
+  background-color: #eb851e;
   color: white;
   font-size: 1.5rem;
   border-radius: 15px;
@@ -163,7 +230,7 @@ h1,h2 {
 }
 
 #resume:hover{
-background-color: #1dcfb8;
+background-color: #cf471d;
 padding: 1.2rem;
 
 }
@@ -171,6 +238,23 @@ padding: 1.2rem;
 
 
 /*------Skills-------*/
+#styledimg h1{
+  background-color: whitesmoke;
+  box-shadow: grey;
+}
+
+#styledimg #skillType{
+  color: white;
+}
+
+/* Skills section */
+#styledimg{
+  background-image: url('./images/bg/aceCombat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
 #icon {
   width: 3.125rem;
   height: 3.25rem;
@@ -202,68 +286,17 @@ padding: 1.2rem;
 }
 
 
-#skillName {
-  width: 12.5rem;
-  background-color: #fff0f5;
-  /* border-style: solid;
-  border-color: #287EC7; */
-  border-radius: 50%;
-  text-align: center;
-  height: 2rem;
-  box-shadow: 5px 5px 2px 1px rgba(78, 78, 214, 0.2);
-}
-
-#skillName:hover {
-  /* background-color: blueviolet; */
-  width: 14.06rem;
-}
-
 
 
 #skillsDiv {
   margin: auto;
-  width: 50rem;
+  /* width: 50rem; */
   padding: 0.5rem;
 }
 
-#skillButton {
-  width: 2rem;
-  background-color: #eb851e;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  height: 2rem;
-  text-align: center;
-  vertical-align: middle;
-
-}
-
-#skillButton:hover {
-  transform: translateX(0.5rem);
-  transition: 0.2s;
-  transform: rotate(90deg);
-
-
-}
-
-/* TODO: Make button look like something when cicked */
-/* #skillButton:focus {
-  transform: translateX(0.5rem);
-  transition: 0.2s;
-  transform: rotate(90deg);
-} */
 
 #skillLevel {
   height: 3rem;
-}
-
-.myDIV {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .biRightArrow:hover {
@@ -274,6 +307,25 @@ padding: 1.2rem;
 
 /*------Contact-form-------*/
 
+.contact-section{
+  background-image: url('./images/bg/light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+.contact-form{
+  color: Black; 
+  margin-left:auto;
+  margin-right: auto;
+  display: block; 
+}
+
+.contactform-container{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 #contactForm {
   /* align-items: center; */
   display: block;
@@ -281,11 +333,10 @@ padding: 1.2rem;
   align-items: center;
   margin-right: auto;
   font-family: 'Ubuntu', sans-serif;
-
 }
 
 textarea {
-  width: 50%;
+  width: 80%;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -297,10 +348,11 @@ textarea {
 }
 
 input {
-  width: 50%;
+  width: 80%;
 }
 
 #contactbutton {
+  margin-top:1rem;
   background-color: #18a795;
 }
 
@@ -312,43 +364,32 @@ footer {
   display: block;
   align-items: center;
   text-align: center;
+  /* color: white; */
+  background-color: white;
 }
 
-/*==================== MEDIA QUERIES =======*/
-@media screen and (max-width: 350px){
-  
+/*==================== RESPONSIVENESS ====================*/
+@media screen and (min-width: 350px){
+  .contact-form{
+    width: 80%; 
+  }
 }
 
 /* Screen size 1285 */
-@media  screen and (max-width:1285px) {
-  /* HOME */
-  #home{
-    background-size: 1285px;
-    padding-bottom: 20rem;
-    padding-top:0.06rem;
+@media  screen and (min-width:768px) {
+  .contact-form{
+    width: 50%; 
   }
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  
-    to {
-      width: 30%
-    }
+
+  .aboutme-container{
+    grid-template-columns: repeat(2, 1fr);
   }
-  #sociallink {
-    bottom: 15rem;
-  }  
-  #aboutmepicture img{
-    margin-left: 15rem;
-  }
-  
 }
 
 /* Screen size 375 */
 
-@media screen and (min-width:375) {
-  body{
+ @media screen and (min-width:375) {
+/*  body{
     width: 337px;
   }
   #home {
@@ -372,7 +413,9 @@ footer {
     }
   #aboutmeinfo{
     margin-right: 3rem;
-  }
+  } */
   
   
 }
+
+

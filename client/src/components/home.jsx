@@ -7,9 +7,9 @@ import Cover from '../images/Cover.png';
 
 const Home = () => {
     return (
-        <div>
-
-            <div id='home'>
+        <div class = 'home-container'>
+            <div id="home">
+            <div id="title-container">
                 <h1>Hi, I am Tarane.</h1>
 
                 {/* <h3 style={{ display: 'block', marginLeft: 'auto', maginRight: 'auto' }}>
@@ -30,6 +30,7 @@ const Home = () => {
                             <AiOutlineGithub color='#18a795' />
                         </a></li>
                 </ul>
+            </div>
             </div>
         </div>
 

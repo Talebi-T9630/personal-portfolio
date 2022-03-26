@@ -71,7 +71,7 @@ class ContactUs extends React.Component {
         if is valid submit form */
         if (!formValid) {
             return (
-                <div style={{ color: "Black", width: '50%', marginLeft: 'auto', marginRight: 'auto', display: 'block',marginTop:'-3rem' }}>
+                <div class = 'contact-form'>
                     <div className="card shadow-lg border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5">
                         {/* TODO: DELETE >  */}
                         {/* <div className="card-header bg-transparent border-0 text-center text-uppercase">
