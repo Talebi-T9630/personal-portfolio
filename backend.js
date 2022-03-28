@@ -14,8 +14,7 @@ app.use(cors());
 
 
 
-    // const url = "mongodb://localhost:27017/SkillDB";
-    const url="mongodb+srv://tarane:88080707Tt!@cluster0.pmkhf.mongodb.net/skillDB";
+    const url = "mongodb://localhost:27017/SkillDB";
 
     app.get("/hello", (req,res)=>{
         res.send("hello world!");
