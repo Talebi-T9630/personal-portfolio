@@ -15,7 +15,7 @@ import Contact from './components/contactform';
 import NavBar from './components/navbar';
 import AboutMe from './components/about';
 import Home from './components/home';
-
+import Projects from './components/projects';
 
 
 
@@ -48,19 +48,18 @@ const skillInfoDropDown =(section)=>{
     }
 }
 //TODO: Hide mongo password ( or change it)
-//TODO: Deploy to the domain 
 
   return (
 
     <body>
       <NavBar />
-      <Home/>
+      <Home />
 
 
       <AboutMe/>
       <div id="styledimg">
       
-        <h1>Skills</h1>
+        <h1 id='Skills'>Skills</h1>
         <h2 id='skillType'>Frontend<BiRightArrow onClick={()=>skillInfoDropDown('frontend')} className='biRightArrow' color='#18a795'/></h2>
         <div id='frontend' style={{ display: 'none' }}>
         {skills.filter(skill => skill.category == 'Frontend').map((skill, index) => <ul style={{textAlign:'center',display:'inline-block',marginLeft:'auto',marginRight:"auto"}}><li style={{display:'inline-block',verticalAlign:'top'}}key={skill.id} id='skillsli'>
@@ -97,13 +96,18 @@ const skillInfoDropDown =(section)=>{
           <img src={image[skill.proficiencyLevel]} className='col' id='skillLevel' />
           </li></ul> )}
         </div>
+        <div class='projects-section'>
+        <h1>Projects</h1>
+        <Projects/>
 
+        </div>
+       
         <div class='contact-section'>
-          <h1 id='contactMe'>
+          <h1 id='Contact-Me'>
             Contact Me
           </h1>
           <div class='contactform-container'>
-            <Contact />
+            <Contact/>
           </div>
         </div>
         </div>

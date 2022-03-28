@@ -188,7 +188,7 @@ h1,h2 {
 
 
 /*------About-Me-------*/
-#aboutme-section{
+.aboutme-section{
   display: flexbox;
   background-image: url('./images/bg/dino.jpg');
   background-size: cover;
@@ -249,7 +249,7 @@ padding: 1.2rem;
 
 /* Skills section */
 #styledimg{
-  background-image: url('./images/bg/aceCombat.jpg');
+  background-image: url('./images/bg/headphone\ cloud.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -304,6 +304,32 @@ padding: 1.2rem;
   transition: 0.2s;
 }
 
+/*--------Projects--------*/
+.card-projects{
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 2rem;
+}
+.card-projects img{
+  width: 100%;
+  padding: 2rem;
+
+}
+
+.card-projects p{
+  text-align: center;
+  font-size:large;
+}
+.projects-section{
+  display: flexbox;
+  background-image: url('./images/bg/aceCombat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
 
 /*------Contact-form-------*/
 

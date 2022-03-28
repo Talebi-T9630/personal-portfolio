@@ -5,7 +5,7 @@ import MyPDF from '../documents/resume.pdf';
 // 
 const AboutMe = () => {
     return (
-        <div id='aboutme-section'>
+        <div class='aboutme-section' id='About-Me'>
             <h1 id='about-title' class='section-title'>
                 About Me
             </h1>
@@ -17,7 +17,8 @@ const AboutMe = () => {
                     {/* <img src={aboutme} height='400rem' style={{ marginLeft: '35rem', width: "300px", height: "337px", objectFit: "cover" }} /> */}
                 </div>
                 <div class='aboutmeinfo'>
-                    <p>Experienced Web Developer with experience and eagerness to learn more. Transforms visions into reality.</p>
+                    <p>Up and coming Web Developer with professional experience and eagerness to learn more. Transforms visions into reality 
+                        while finding the most effective solutions.</p>
                     <a href={MyPDF} download='Tarane-Talebi-Resume.pdf'> <button id='resume' >Download Resume <BsFillCloudArrowDownFill /></button></a>
                 </div>
             </div>
