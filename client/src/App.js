@@ -25,7 +25,7 @@ function App() {
   const [image] = useState([image0, image1, image2, image3, image4, image5]);
 
   useEffect(async () => {
-    axios.get("http://localhost:5000")
+    axios.get("https://personal-profile-cors.herokuapp.com/")
       .then(resp => {
         console.log(resp, resp.data);
         setSkills(resp.data);

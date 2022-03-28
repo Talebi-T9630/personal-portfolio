@@ -17,8 +17,8 @@ const AboutMe = () => {
                     {/* <img src={aboutme} height='400rem' style={{ marginLeft: '35rem', width: "300px", height: "337px", objectFit: "cover" }} /> */}
                 </div>
                 <div class='aboutmeinfo'>
-                    <p>Experienced Web Developer with experience and eagerness to learn more. Takes visions and turns them reality.</p>
-                    <a href={MyPDF} download='resume.pdf'> <button id='resume' >Download Resume <BsFillCloudArrowDownFill /></button></a>
+                    <p>Experienced Web Developer with experience and eagerness to learn more. Transforms visions into reality.</p>
+                    <a href={MyPDF} download='Tarane-Talebi-Resume.pdf'> <button id='resume' >Download Resume <BsFillCloudArrowDownFill /></button></a>
                 </div>
             </div>
         </div>
