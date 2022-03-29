@@ -11,6 +11,7 @@ import image4 from './images/progress-level/4.png';
 import image5 from './images/progress-level/5.png';
 import { BsSuitHeart } from 'react-icons/bs';
 import { BiRightArrow } from 'react-icons/bi';
+import {BsFillArrowUpCircleFill} from 'react-icons/bs';
 import Contact from './components/contactform';
 import NavBar from './components/navbar';
 import AboutMe from './components/about';
@@ -47,11 +48,23 @@ const skillInfoDropDown =(section)=>{
       x.style.display = "none";
     }
 }
+window.onscroll =()=> {scrollFunction()};
+
+const scrollFunction=()=> {
+  var toTheTop=document.getElementById('toTheTop');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toTheTop.style.display = "block";
+  } else {
+    toTheTop.style.display = "none";
+  }
+}
+
 //TODO: Hide mongo password ( or change it)
 
   return (
 
     <body>
+      <button class='to-the-top' id='toTheTop' style={{display:'none'}}><a href='#NavBar'><BsFillArrowUpCircleFill size={40} color='#eb851e'/></a></button>
       <NavBar />
       <Home />
 
